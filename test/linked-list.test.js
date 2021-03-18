@@ -115,8 +115,7 @@ describe("LinkedList", () => {
             while (count < 5) {
                 list.addFirst(count);
                 expect(list.findMax()).toEqual(count);
-                expect(list.findMin()).toEqual(0); // I disagree with this test expectation! It is never stated that all values are integers, therefore you cannot assume the min to be zero!  I wrote a different test below:
-                // expect(list.findMin()).toEqual(1);
+                expect(list.findMin()).toEqual(0); 
 
                 count += 1
             }
@@ -127,6 +126,7 @@ describe("LinkedList", () => {
             expect(list.findMax()).toEqual(100);
             expect(list.findMin()).toEqual(-12);
         });
+
     });
 
     describe("delete", () => {
