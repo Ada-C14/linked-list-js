@@ -203,22 +203,14 @@ describe("LinkedList", () => {
             expect(list.getLast()).toEqual(4);
         })
 
-        // it("will add to the front of the list if the list is empty", () => {
-        //     // Act
-        //     list.addLast(2);
-
-        //     // Assert
-        //     expect(list.getAtIndex(0)).toEqual(2);
-        // })
-        
         it("will add to the front of the list if the list is empty", () => {
             // Act
-            let newList = new LinkedList;
-            newList.addLast(2);
+            list.addLast(2);
 
             // Assert
-            expect(newList.getAtIndex(0)).toEqual(2);
+            expect(list.getAtIndex(0)).toEqual(2);
         })
+        
     });
 
     describe("Optional: findNthFromEend", () => {
@@ -241,7 +233,7 @@ describe("LinkedList", () => {
         });
     });
 
-    describe.skip("Optional: insertAscending", () => {
+    describe("Optional: insertAscending", () => {
         it("inserts an element in the middle of the list", () => {
             // Arrange
             list.addFirst(5);
