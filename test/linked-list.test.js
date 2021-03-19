@@ -203,12 +203,21 @@ describe("LinkedList", () => {
             expect(list.getLast()).toEqual(4);
         })
 
+        // it("will add to the front of the list if the list is empty", () => {
+        //     // Act
+        //     list.addLast(2);
+
+        //     // Assert
+        //     expect(list.getAtIndex(0)).toEqual(2);
+        // })
+        
         it("will add to the front of the list if the list is empty", () => {
             // Act
-            list.addLast(2);
+            let newList = new LinkedList;
+            newList.addLast(2);
 
             // Assert
-            expect(list.getAtIndex(0)).toEqual(2);
+            expect(newList.getAtIndex(0)).toEqual(2);
         })
     });
 
