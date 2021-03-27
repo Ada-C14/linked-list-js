@@ -66,7 +66,7 @@ describe("LinkedList", () => {
             expect(list.search(3)).toEqual(false);
         });
     });
-    describe.skip("length", () => {
+    describe("length", () => {
         it("will return zero for an empty list", () => {
             // Assert
             expect(list.length()).toEqual(0);
