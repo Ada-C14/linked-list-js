@@ -104,7 +104,7 @@ describe("LinkedList", () => {
         });
     });
 
-    describe.skip("max and min values", () => {
+    describe("max and min values", () => {
         it("returns null if the list is empty", () => {
             expect(list.findMax()).toBeNull();
             expect(list.findMin()).toBeNull();
