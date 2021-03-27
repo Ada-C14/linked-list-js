@@ -42,7 +42,7 @@ describe("LinkedList", () => {
             expect(list.getAtIndex(0)).toBeNull();
         });
     });
-    describe("search", () => {
+    describe.skip("search", () => {
         it("can find an element", () => {
             // Act
             list.addFirst(2);
@@ -66,7 +66,7 @@ describe("LinkedList", () => {
             expect(list.search(3)).toEqual(false);
         });
     });
-    describe("length", () => {
+    describe.skip("length", () => {
         it("will return zero for an empty list", () => {
             // Assert
             expect(list.length()).toEqual(0);
@@ -104,7 +104,7 @@ describe("LinkedList", () => {
         });
     });
 
-    describe("max and min values", () => {
+    describe.skip("max and min values", () => {
         it("returns null if the list is empty", () => {
             expect(list.findMax()).toBeNull();
             expect(list.findMin()).toBeNull();
@@ -127,7 +127,7 @@ describe("LinkedList", () => {
         });
     });
 
-    describe("delete", () => {
+    describe.skip("delete", () => {
         it("deleting from empty list is a no-op", () => {
             expect(list.length()).toEqual(0);
             list.delete(4);
@@ -166,7 +166,7 @@ describe("LinkedList", () => {
         });
     });
 
-    describe("reverse", () => {
+    describe.skip("reverse", () => {
         it("can reverse the linked list", () => {
             // Arrange
             list.addFirst(4);
