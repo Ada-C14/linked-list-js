@@ -42,7 +42,7 @@ describe("LinkedList", () => {
             expect(list.getAtIndex(0)).toBeNull();
         });
     });
-    describe.skip("search", () => {
+    describe("search", () => {
         it("can find an element", () => {
             // Act
             list.addFirst(2);
