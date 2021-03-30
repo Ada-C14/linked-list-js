@@ -166,7 +166,7 @@ describe("LinkedList", () => {
         });
     });
 
-    describe.skip("reverse", () => {
+    describe("reverse", () => {
         it("can reverse the linked list", () => {
             // Arrange
             list.addFirst(4);
