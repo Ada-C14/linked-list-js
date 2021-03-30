@@ -127,7 +127,7 @@ describe("LinkedList", () => {
         });
     });
 
-    describe.skip("delete", () => {
+    describe("delete", () => {
         it("deleting from empty list is a no-op", () => {
             expect(list.length()).toEqual(0);
             list.delete(4);
